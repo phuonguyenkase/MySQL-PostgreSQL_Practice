@@ -23,3 +23,14 @@ SELECT ROUND(
 FROM callers;
 
 #Ex4:
+SELECT name
+FROM Customer
+WHERE referee_id IS NULL OR referee_id != 2;
+
+#Ex5:
+Select survived,
+SUM(CASE WHEN pclass = 1 THEN 1 ELSE 0 END) AS first_class,
+SUM(CASE WHEN pclass = 2 THEN 1 ELSE 0 END) AS second_clas,
+SUM(CASE WHEN pclass = 3 THEN 1 ELSE 0 END) AS third_class
+From titanic
+GROUP BY survived;
