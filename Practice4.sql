@@ -21,3 +21,5 @@ SELECT ROUND(
     CAST(SUM(CASE WHEN COALESCE(call_category, 'n/a') = 'n/a' THEN 1 ELSE 0 END) AS DECIMAL) / 
     CAST(COUNT(*) AS DECIMAL) * 100, 1) AS uncategorised_call_pct
 FROM callers;
+
+#Ex4:
