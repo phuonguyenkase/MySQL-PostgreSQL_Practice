@@ -76,6 +76,6 @@ JOIN City
 	ON Addr.city_id = City.city_id
 JOIN Country Coun
 	ON City.country_id = Coun.country_id
-GROUP BY Coun.country, city.city
-ORDER BY Revenue
+GROUP BY Country_City
+ORDER BY Revenue DESC
 LIMIT 1;
