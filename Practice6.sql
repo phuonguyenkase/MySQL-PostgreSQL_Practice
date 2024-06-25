@@ -80,3 +80,72 @@ JOIN a
 	ON a.`month` = DATE_FORMAT(t.trans_date, '%Y-%m')
     AND a.country = t.country
 GROUP BY a.`month`, a.country;
+
+#Ex7:
+WITH a AS
+(SELECT product_id, MIN(year) as first_year
+FROM Sales
+GROUP BY product_id)
+
+SELECT s.product_id, first_year, s.quantity, price
+FROM Sales s
+JOIN a
+    ON s.product_id = a.product_id
+    AND s.year = a.first_year;
+
+#Ex8:
+SELECT customer_id
+FROM customer
+GROUP BY customer_id
+HAVING COUNT(DISTINCT product_key) = (SELECT COUNT(product_key) FROM Product);
+
+#Ex9:
+Select employee_id
+FROM employees
+WHERE salary < 30000
+AND manager_id not in (Select employee_id from employees)
+ORDER BY employee_id;
+
+#Ex10: Em thấy nó bị lỗi bấm vào lại thành Ex1
+
+#Ex11:
+WITH name_solve AS (SELECT U.name as results
+FROM users as U
+JOIN MovieRating as MV
+    ON U.user_id = MV.user_id
+GROUP BY U.user_id, U.name
+HAVING COUNT(rating) = 3
+ORDER BY U.name
+LIMIT 1),
+highest_avg_rating AS 
+(SELECT title as results
+ FROM (SELECT M.movie_id, title, AVG(rating) AS avg_rating
+    FROM MovieRating MR
+    LEFT JOIN Movies M
+       ON MR.movie_id = M.movie_id
+    WHERE DATE_FORMAT(created_at, '%Y-%m') = '2020-02'
+    GROUP BY movie_id, title) AS movies
+ORDER BY avg_rating DESC, title
+LIMIT 1)
+
+SELECT *
+FROM name_solve
+UNION ALL
+SELECT *
+FROM highest_avg_rating;
+
+#Ex12: #Đếm id theo group by ở từng cột accepter và requester trong CTE rồi mới SUM phía bên ngoài
+WITH new AS 
+((SELECT accepter_id AS id, COUNT(*) AS num 
+  FROM RequestAccepted
+  GROUP BY accepter_id)
+UNION ALL
+(SELECT requester_id AS id, COUNT(*) AS num 
+ FROM RequestAccepted
+ GROUP BY requester_id))
+
+SELECT id, SUM(num) AS num 
+FROM new
+GROUP BY id
+ORDER BY num DESC
+LIMIT 1;
