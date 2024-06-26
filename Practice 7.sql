@@ -73,3 +73,17 @@ WHERE rnk <= 2
 ORDER BY category, rnk;
 
 #Ex8:
+WITH ranking AS (
+SELECT a.artist_name,
+DENSE_RANK() OVER (ORDER BY COUNT(S.song_id) DESC) as artist_rank
+FROM artists A
+JOIN songs S
+  ON a.artist_id = s.artist_id
+JOIN global_song_rank G
+  ON s.song_id = g.song_id
+WHERE g.rank <= 10
+GROUP BY a.artist_name)
+  
+SELECT *
+FROM ranking
+WHERE artist_rank <= 5;
