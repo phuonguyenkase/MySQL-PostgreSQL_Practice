@@ -30,14 +30,18 @@ WHEN id % 2 = 0 THEN LAG(student) OVER (ORDER BY id)
 END AS student
 FROM Seat;
 #Ex4:
-WITH total as (SELECT customer_id, DATE_ADD(visited_on, INTERVAL 6 DAY) AS visited_on,
-SUM(amount) OVER(ORDER BY visited_on ROWS BETWEEN CURRENT ROW AND 6 FOLLOWING) AS amount, #Em không biết cách nào để nó cộng luôn thằng nếu trong 1 ngày có 2 customer:v qua giờ chưa mò ra
+WITH CTE as (SELECT customer_id, visited_on, SUM(amount) as amount
+FROM customer
+GROUP BY visited_on
+ORDER BY visited_on),
+total as (SELECT customer_id, DATE_ADD(visited_on, INTERVAL 6 DAY) AS visited_on,
+SUM(amount) OVER(ORDER BY visited_on ROWS BETWEEN CURRENT ROW AND 6 FOLLOWING) AS amount,
 RANK() OVER (PARTITION BY customer_id ORDER BY visited_on) AS ranking
-FROM Customer)
+FROM CTE)
 
 SELECT visited_on, amount, ROUND(amount/7,2) as average_amount
 FROM total
-WHERE ranking = 1 AND visited_on <= '2019-01-10'
+WHERE ranking = 1 AND visited_on <= (SELECT MAX(visited_on) FROM customer)
 ORDER BY visited_on;
 
 #Ex5: 
