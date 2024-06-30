@@ -1,3 +1,43 @@
+Practice 1:
+Ex1: Hackerank Revising The Select Query: https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true
+Ex2: Hackerank Japanese Cities Attributes: https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true
+Ex3: Hackerank Weather Observation Station 1: https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true
+Ex4: Hackerank Weather Observation Station 6: https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true
+Ex5: Hackerank Weather Observation Station 7: https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true
+Ex6: Hackerank Weather Observation Station 9: https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true
+Ex7: Hackerank Name of Employees: https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true
+Ex8: Hackerank Salary of Employees: https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true
+Ex9: Leetcode Recyclable And Low Fat Products: https://leetcode.com/problems/recyclable-and-low-fat-products/?envType=study-plan-v2&envId=top-sql-50
+Ex10: Leetcode Find Customer Referee: https://leetcode.com/problems/find-customer-referee/?envType=study-plan-v2&envId=top-sql-50
+Ex11: Leetcode Big Countries: https://leetcode.com/problems/big-countries/?envType=study-plan-v2&envId=top-sql-50
+Ex12: Leetcode Article Views: https://leetcode.com/problems/article-views-i/?envType=study-plan-v2&envId=top-sql-50
+Ex13: Datalemur Tesla Unfinished Part: https://datalemur.com/questions/tesla-unfinished-parts
+Ex14: Strata Scratch Lyft Driver Wages: https://platform.stratascratch.com/coding/10003-lyft-driver-wages?code_type=1
+Ex15: Strata Scratch Find The Advertising Channel: https://platform.stratascratch.com/coding/10002-find-the-advertising-channel-where-uber-spent-more-than-100k-usd-in-2019?code_type=1
+
+Practice 2:
+Ex1: Hackerrank weather observation station 3: https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true
+Ex2: Hackerrank weather observation station 4: https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true
+Ex3: Hackerrank the blunder: https://www.hackerrank.com/challenges/the-blunder/problem?isFullScreen=true
+Ex4: Datalemur Alibaba Compressed Mean: https://datalemur.com/questions/alibaba-compressed-mean
+Ex5: Datalemur Data Science Skills: https://datalemur.com/questions/matching-skills
+Ex6: Datalemur Average Post Hiatus (Part 1): https://datalemur.com/questions/sql-average-post-hiatus-1
+Ex7: Datalemur cards issued difference: https://datalemur.com/questions/cards-issued-difference
+Ex8: Datalemur Pharmacy Analytics (Part 2): https://datalemur.com/questions/non-profitable-drugs
+Ex9: Leetcode not boring movies: https://leetcode.com/problems/not-boring-movies/?envType=study-plan-v2&envId=top-sql-50
+Ex10: Leetcode Number of Unique Subjects Taught by Each Teacher: https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/?envType=study-plan-v2&envId=top-sql-50
+Ex11: Leetcode find followers count: https://leetcode.com/problems/find-followers-count/?envType=study-plan-v2&envId=top-sql-50
+Ex12: Leetcode classes more than 5 students: https://leetcode.com/problems/classes-more-than-5-students/?envType=study-plan-v2&envId=top-sql-50
+
+Practice 5:
+Ex1: Hackerrank average population of each continent: https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true
+Ex2: Datalemur signup confirmation rate: https://datalemur.com/questions/signup-confirmation-rate
+Ex3: Datalemur Sending vs. Opening Snaps: https://datalemur.com/questions/time-spent-snaps
+Ex4: Datalemur supercloud customer: https://datalemur.com/questions/supercloud-customer
+Ex5: Leetcode the number of employees which report to each employee: https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/?envType=study-plan-v2&envId=top-sql-50
+Ex6: Leetcode list the products ordered in a period: https://leetcode.com/problems/list-the-products-ordered-in-a-period/?envType=study-plan-v2&envId=top-sql-50
+Ex7: Datalemur SQL page with no likes: https://datalemur.com/questions/sql-page-with-no-likes
+
 Practice 6:
 Ex1: Datalemur Duplicate Job Listings: https://datalemur.com/questions/duplicate-job-listings
 Ex2: Datalemur Highest Grossing Items: https://datalemur.com/questions/sql-highest-grossing
@@ -20,3 +60,13 @@ Ex5: Datalemur Rolling Average Tweets: https://datalemur.com/questions/rolling-a
 Ex6: Datalemur Repeated Payments: https://datalemur.com/questions/repeated-payments
 Ex7: Datalemur Highest Grossing: (Cùng đề vs Ex2 Practice 6)
 Ex8: Datalemur Top Fans Rank: https://datalemur.com/questions/top-fans-rank
+
+Practice 8:
+Ex1: Leetcode Immediate Food Delivery II: https://leetcode.com/problems/immediate-food-delivery-ii/?envType=study-plan-v2&envId=top-sql-50
+Ex2: Leetcode Game Play Analysis IV: https://leetcode.com/problems/game-play-analysis-iv/?envType=study-plan-v2&envId=top-sql-50
+Ex3: Leetcode Exchange seats: https://leetcode.com/problems/exchange-seats/?envType=study-plan-v2&envId=top-sql-50
+Ex4: Leetcode restaurant growth: https://leetcode.com/problems/restaurant-growth/?envType=study-plan-v2&envId=top-sql-50 (Ra đúng kết quả vẫn ko accept)
+Ex5: Leetcode investments in 2016: https://leetcode.com/problems/investments-in-2016/?envType=study-plan-v2&envId=top-sql-50
+Ex6: Leetcode department top three salaries: https://leetcode.com/problems/department-top-three-salaries/?envType=study-plan-v2&envId=top-sql-50
+Ex7: Leetcode last person to fit in the bus: https://leetcode.com/problems/last-person-to-fit-in-the-bus/?envType=study-plan-v2&envId=top-sql-50
+Ex8: Leetcode product price at a given date: https://leetcode.com/problems/product-price-at-a-given-date/?envType=study-plan-v2&envId=top-sql-50
