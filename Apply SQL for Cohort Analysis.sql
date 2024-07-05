@@ -44,7 +44,7 @@ FROM online_retail1) AS A)
 
 SELECT cohort_date, index, COUNT(DISTINCT customerid) AS cnt, SUM(amount) AS revenue
 FROM online_retail_index
-GROUP BY cohort_date, index;
+GROUP BY cohort_date, index; #From this we will use excel to visualize
 
 #Build Pivot Table
 WITH xxx AS (
