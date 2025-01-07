@@ -6,11 +6,11 @@ INNER JOIN City as c
 GROUP BY y.continent;
 
 #Ex2:
-SELECT
-ROUND(CAST(SUM(CASE WHEN t.signup_action = 'Confirmed' THEN 1 else 0 END) AS decimal)/COUNT(DISTINCT t.*),2) AS confirm_rate
-FROM emails AS e
-INNER JOIN texts AS t
-  ON e.email_id = t.email_id;
+SELECT COUNT(t.email_id)/COUNT(DISTINCT e.email_id) AS activation_rate
+FROM emails e 
+LEFT JOIN texts t
+  ON e.email_id = t.email_id
+  AND t.signup_action = 'Confirmed';
 
 #Ex3:
 SELECT A2.age_bucket,
