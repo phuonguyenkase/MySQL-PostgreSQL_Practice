@@ -21,6 +21,7 @@ OR CITY LIKE 'e%'
 OR CITY LIKE 'i%'
 OR CITY LIKE 'o%'
 OR CITY LIKE 'u%';
+#Hoặc dùng: WHERE city REGEXP '^[aeiou]' còn postgresql thì WHERE city ~ '^[aeiou]'
 
 #Ex5 (tương tự):
 SELECT Distinct City
