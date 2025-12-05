@@ -78,4 +78,5 @@ ON ord_it.ID = pro.ID
 GROUP BY pro.category, FORMAT_TIMESTAMP('%Y-%m', ord_it.created_at))
 
 SELECT *
-FROM sample; #Em ko biết làm 3 năm gần đây nhất ạ
+FROM sample;
+https://console.cloud.google.com/marketplace/product/bigquery-public-data/thelook-ecommerce?project=infinite-byte-480315-c5
